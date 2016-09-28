@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.BankClient"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="10"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application android:label="Bank App" android:icon="@drawable/bank">
+        <activity android:name=".Login"
+                  android:label="BankApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ListAccounts"
+                  android:label="Select Your Account">
+        </activity>
+        <activity android:name=".Menu"
+                  android:label="Menu">
+        </activity>
+        <activity android:name=".Transactions"
+                  android:label="Choose type of transactions: ">
+        </activity>
+        <activity android:name=".Transfer"
+                  android:label="Transfer Money">
+        </activity>
+        <activity android:name=".TransactionsSendReceive"
+                  android:label="Latest Transactions">
+        </activity>
+        <activity android:name=".FinalizeTransfer"
+                  android:label="Check Transfer Details">
+        </activity>
+    </application>
+</manifest> 
